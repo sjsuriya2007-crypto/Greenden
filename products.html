@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/lib/index.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<!-- Responsive Navbar -->
+<nav class="bg-green-100 p-4 flex justify-between shadow-xl sticky top-0 z-10">
+    <h1 class="text-2xl font-bold text-green-900">GREENDEN</h1>
+    <div class="relative">
+        <!-- Toggle Button -->
+        <label for="menu-toggle" class="cursor-pointer md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" width="24" height="24" class="text-gray-800">
+                <path fill-rule="evenodd" d="M2 3.75A.75.75 0 0 1 2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75ZM2 8a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 8Zm0 4.25a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+            </svg>
+        </label>
+    
+        <!-- Hidden Checkbox -->
+        <input type="checkbox" id="menu-toggle" class="hidden peer">
+    
+        <!-- Side Navigation Menu -->
+        <div class="fixed top-0 right-0 w-64 h-full bg-green-800 text-white transform translate-x-full peer-checked:translate-x-0 transition-transform duration-300 ease-in-out shadow-lg z-50">
+            <label for="menu-toggle" class="absolute top-4 right-4 text-white text-xl font-bold cursor-pointer">&times;</label>
+            <nav class="mt-10 space-y-4 px-6">
+                <a href="index.html" class="block text-lg font-semibold hover:text-green-300">Home</a>
+                <a href="products.html" class="block text-lg font-semibold hover:text-green-300">PRODUCTS</a>
+                <a href="contact.html" class="block text-lg font-semibold hover:text-green-300">CONTACT</a>
+            </nav>
+        </div>
+    </div>
+
+    <ul class="flex gap-5 text-green-800 hidden md:flex font-semibold">
+        <li><a class="hover:underline hover:text-green-900" href="index.html">HOME</a></li>
+        <li><a class="hover:underline hover:text-green-900" href="products.html">PRODUCTS</a></li>
+        <li><a class="hover:underline hover:text-green-900" href="contact.html">CONTACT</a></li>
+    </ul>
+</nav>
+
+
+<!-- search Section -->
+<section class="text-center bg-green-100 p-5">
+    <h1 class="text-3xl font-bold text-green-900">PRODUCTS</h1>
+    <input id="search" type="text" class="border border-green-500 p-3 mt-4 rounded-lg w-3/4 md:w-1/2 focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Search for our products">
+</section>
+
+<!-- Products Section -->
+<div id="product_container" class="p-6 grid grid-cols-2 md:grid-cols-4 gap-6 bg-green-50">
+    <div class="text-center">
+        <img src="./image/Rose Plant (1).jpeg" class="rounded-lg hover:shadow-2xl transform hover:scale-105 h-48 w-48 mx-auto" alt="Rose Plant">
+        <h1 class="font-bold text-green-800 mt-2">Rose Plant</h1>
+        <p class="text-green-700">₹1500</p>
+    </div>
+    <div class="text-center">
+        <img src="./image/Bonsai Tree (1).jpg" class="rounded-lg hover:shadow-2xl transform hover:scale-105 h-48 w-48 mx-auto" alt="Bonsai Tree">
+        <h1 class="font-bold text-green-800 mt-2">Bonsai Tree</h1>
+        <p class="text-green-700">₹2500</p>
+    </div>
+    <div class="text-center">
+        <img src="./image/Succulent Plant (1).jpeg" class="rounded-lg hover:shadow-2xl transform hover:scale-105 h-48 w-48 mx-auto" alt="Succulent Plant">
+        <h1 class="font-bold text-green-800 mt-2">Succulent Plant</h1>
+        <p class="text-green-700">₹800</p>
+    </div>
+    <div class="text-center">
+        <img src="./image/Jade Plant (1).jpg" class="rounded-lg hover:shadow-2xl transform hover:scale-105 h-48 w-48 mx-auto" alt="Jade Plant">
+        <h1 class="font-bold text-green-800 mt-2">Jade Plant</h1>
+        <p class="text-green-700">₹1200</p>
+    </div>
+    <div class="text-center">
+        <img src="./image/Aloe Vera (1).jpg" class="rounded-lg hover:shadow-2xl transform hover:scale-105 h-48 w-48 mx-auto" alt="Aloe Vera">
+        <h1 class="font-bold text-green-800 mt-2">Aloe Vera</h1>
+        <p class="text-green-700">₹900</p>
+    </div>
+    <div class="text-center">
+        <img src="./image/Money Plant (1).jpeg" class="rounded-lg hover:shadow-2xl transform hover:scale-105 h-48 w-48 mx-auto" alt="Money Plant">
+        <h1 class="font-bold text-green-800 mt-2">Money Plant</h1>
+        <p class="text-green-700">₹1100</p>
+    </div>
+    <div class="text-center">
+        <img src="./image/Cactus (1).jpeg" class="rounded-lg hover:shadow-2xl transform hover:scale-105 h-48 w-48 mx-auto" alt="Cactus">
+        <h1 class="font-bold text-green-800 mt-2">Cactus</h1>
+        <p class="text-green-700">₹700</p>
+    </div>
+    <div class="text-center">
+        <img src="./image/Lavender Plant (1).jpg" class="rounded-lg hover:shadow-2xl transform hover:scale-105 h-48 w-48 mx-auto" alt="Lavender Plant">
+        <h1 class="font-bold text-green-800 mt-2">Lavender Plant</h1>
+        <p class="text-green-700">₹2000</p>
+    </div>
+    <div class="text-center">
+        <img src="./image/Bamboo Plant.jpeg" class="rounded-lg hover:shadow-2xl transform hover:scale-105 h-48 w-48 mx-auto" alt="Bamboo Plant">
+        <h1 class="font-bold text-green-800 mt-2">Bamboo Plant</h1>
+        <p class="text-green-700">₹1000</p>
+    </div>
+    <div class="text-center">
+        <img src="./image/Palm Tree.jpeg" class="rounded-lg hover:shadow-2xl transform hover:scale-105 h-48 w-48 mx-auto" alt="Palm Tree">
+        <h1 class="font-bold text-green-800 mt-2">Palm Tree</h1>
+        <p class="text-green-700">₹2200</p>
+    </div>
+    <div class="text-center">
+        <img src="./image/Hibiscus.jpeg" class="rounded-lg hover:shadow-2xl transform hover:scale-105 h-48 w-48 mx-auto" alt="Hibiscus">
+        <h1 class="font-bold text-green-800 mt-2">Hibiscus</h1>
+        <p class="text-green-700">₹850</p>
+    </div>
+    <div class="text-center">
+        <img src="./image/Croton Plant.jpeg" class="rounded-lg hover:shadow-2xl transform hover:scale-105 h-48 w-48 mx-auto" alt="Croton Plant">
+        <h1 class="font-bold text-green-800 mt-2">Croton Plant</h1>
+        <p class="text-green-700">₹1250</p>
+    </div>
+    <div class="text-center">
+        <img src="./image/Orchid Plant.jpeg" class="rounded-lg hover:shadow-2xl transform hover:scale-105 h-48 w-48 mx-auto" alt="Orchid Plant">
+        <h1 class="font-bold text-green-800 mt-2">Orchid Plant</h1>
+        <p class="text-green-700">₹1800</p>
+    </div>
+    <div class="text-center">
+        <img src="./image/Fern Plant.jpeg" class="rounded-lg hover:shadow-2xl transform hover:scale-105 h-48 w-48 mx-auto" alt="Fern Plant">
+        <h1 class="font-bold text-green-800 mt-2">Fern Plant</h1>
+        <p class="text-green-700">₹950</p>
+    </div>
+    <div class="text-center">
+        <img src="./image/Peony Plant.jpg" class="rounded-lg hover:shadow-2xl transform hover:scale-105 h-48 w-48 mx-auto" alt="Peony Plant">
+        <h1 class="font-bold text-green-800 mt-2">Peony Plant</h1>
+        <p class="text-green-700">₹1300</p>
+    </div>
+    <div class="text-center">
+        <img src="./image/Ivy Plant.jpg" class="rounded-lg hover:shadow-2xl transform hover:scale-105 h-48 w-48 mx-auto" alt="Ivy Plant">
+        <h1 class="font-bold text-green-800 mt-2">Ivy Plant</h1>
+        <p class="text-green-700">₹750</p>
+    </div>
+    <div class="text-center">
+        <img src="./image/Mint Plant.jpg" class="rounded-lg hover:shadow-2xl transform hover:scale-105 h-48 w-48 mx-auto" alt="Mint Plant">
+        <h1 class="font-bold text-green-800 mt-2">Mint Plant</h1>
+        <p class="text-green-700">₹400</p>
+    </div>
+    <div class="text-center">
+        <img src="./image/Spider Plant.jpeg" class="rounded-lg hover:shadow-2xl transform hover:scale-105 h-48 w-48 mx-auto" alt="Spider Plant">
+        <h1 class="font-bold text-green-800 mt-2">Spider Plant</h1>
+        <p class="text-green-700">₹650</p>
+    </div>
+    <div class="text-center">
+        <img src="./image/Lemon Tree.jpg" class="rounded-lg hover:shadow-2xl transform hover:scale-105 h-48 w-48 mx-auto" alt="Lemon Tree">
+        <h1 class="font-bold text-green-800 mt-2">Lemon Tree</h1>
+        <p class="text-green-700">₹1600</p>
+    </div>
+    <div class="text-center">
+        <img src="./image/Marigold Plant.jpg" class="rounded-lg hover:shadow-2xl transform hover:scale-105 h-48 w-48 mx-auto" alt="Marigold Plant">
+        <h1 class="font-bold text-green-800 mt-2">Marigold Plant</h1>
+        <p class="text-green-700">₹500</p>
+    </div>
+    <div class="text-center">
+        <img src="./image/Fiddle Leaf Fig.jpeg" class="rounded-lg hover:shadow-2xl transform hover:scale-105 h-48 w-48 mx-auto" alt="Fiddle Leaf Fig">
+        <h1 class="font-bold text-green-800 mt-2">Fiddle Leaf Fig</h1>
+        <p class="text-green-700">₹2700</p>
+    </div>
+    <div class="text-center">
+        <img src="./image/Tulip Plant.jpeg" class="rounded-lg hover:shadow-2xl transform hover:scale-105 h-48 w-48 mx-auto" alt="Tulip Plant">
+        <h1 class="font-bold text-green-800 mt-2">Tulip Plant</h1>
+        <p class="text-green-700">₹2000</p>
+    </div>
+    <div class="text-center">
+        <img src="./image/Chrysanthemum.jpg" class="rounded-lg hover:shadow-2xl transform hover:scale-105 h-48 w-48 mx-auto" alt="Chrysanthemum">
+        <h1 class="font-bold text-green-800 mt-2">Chrysanthemum</h1>
+        <p class="text-green-700">₹900</p>
+    </div>
+    <div class="text-center">
+        <img src="./image/Golden Pothos.jpg" class="rounded-lg hover:shadow-2xl transform hover:scale-105 h-48 w-48 mx-auto" alt="Golden Pothos">
+        <h1 class="font-bold text-green-800 mt-2">Golden Pothos</h1>
+        <p class="text-green-700">₹600</p>
+    </div>
+       
+</div>
+
+
+<!-- Footer -->
+<footer class="bg-green-300 p-8 text-center text-green-900">
+    <h1 class="text-4xl font-bold">GREENDEN</h1>
+    <p class="mt-3">Your go-to source for sustainable and eco-friendly plants and gardening products.</p>
+    <p class="mt-1">&copy; 2026 Greenden.com</p>
+</footer>
+
+<script src="products.js"></script>
+ 
+            
+
+</body>
+</html>
